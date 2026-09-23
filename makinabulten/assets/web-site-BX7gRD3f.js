@@ -114,7 +114,9 @@ Error generating stack: `+e.message+`
 .web-video-frame a{position:absolute;inset:0;display:grid;place-content:center;color:#fff;font-size:var(--fs-200);font-weight:700;text-decoration:none}
 
 /* Üyelik CTA */
-.web-membership-cta{display:grid;grid-template-columns:642px minmax(0,1fr);gap:var(--sp-8);align-items:center}
+/* Sağ kolon görselin ÜSTÜNE hizalanır: ortalama, kolonlar daralınca metni
+   görselden bağımsız kaydırıp hizasız gösteriyordu (kullanıcı isteği, 2026-09-23). */
+.web-membership-cta{display:grid;grid-template-columns:642px minmax(0,1fr);gap:var(--sp-8);align-items:start}
 .web-membership-cta h2{margin-top:0}
 .web-membership-cta.is-text-only{grid-template-columns:minmax(0,1fr)}
 .web-publication-shell .web-membership-cta-image{height:326px}
@@ -299,7 +301,8 @@ Error generating stack: `+e.message+`
   .web-president-block{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
   .web-membership-cta,.web-news-featured,.web-podcast-intro,.web-learning-intro{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
   .web-publication-shell .web-membership-cta-image{height:auto;aspect-ratio:642/326}
-  .web-membership-cta h2{font-size:var(--fs-600)}.web-membership-cta p,.web-membership-cta div{font-size:var(--fs-400)}
+  /* Görsel küçülünce yazı ona göre büyük kalıyordu; bu kırılımda bir kademe iner. */
+  .web-membership-cta h2{font-size:var(--fs-550)}.web-membership-cta p,.web-membership-cta div{font-size:var(--fs-350)}
   .web-publication-shell main[data-web-route=news]{--space:var(--sp-10)}
   .web-news-secondary{gap:var(--sp-5)}.web-news-compact{height:auto;min-height:0}.web-news-compact>div{padding:var(--sp-6)}
   .web-president-band .web-president-identity{width:340px}
