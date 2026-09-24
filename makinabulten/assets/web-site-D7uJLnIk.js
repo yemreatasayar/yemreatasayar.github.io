@@ -194,7 +194,7 @@ Error generating stack: `+e.message+`
 .web-author-band{display:flex;align-items:center;justify-content:center;gap:var(--sp-5);margin-inline:calc(50% - 50vw);padding:var(--sp-5) 0;background:var(--gray)}
 .web-publication-shell .web-author-portrait{width:170px;height:170px;border-radius:var(--r-full);background:#fff}
 .web-author-band b{display:block;font-size:var(--fs-500);font-weight:500;line-height:var(--lh-heading)}
-.web-author-band span{display:block;max-width:34em;font-size:var(--fs-500);font-weight:500;line-height:var(--lh-heading);white-space:pre-line;text-wrap:balance}
+.web-author-band span{display:block;max-width:24em;font-size:var(--fs-500);font-weight:500;line-height:var(--lh-heading);white-space:pre-line;text-wrap:balance}
 
 /* Başkan sayfası */
 .web-president-band{display:flex;align-items:flex-end;justify-content:center;gap:var(--sp-8);margin:calc(-1 * var(--sp-9)) calc(50% - 50vw) 0;padding:var(--sp-9) var(--gutter) 0;border-bottom:var(--hairline) solid var(--rule)}
